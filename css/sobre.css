@@ -1,0 +1,83 @@
+:root {
+    --color-red: rgb(187, 19, 19);
+   }
+  
+   body {
+       background: #298ba3;
+       font-family: 'Roboto', sans-serif;
+       margin: 0;
+     }
+    
+   #logo {
+    text-align: center;
+    height: 100%;
+    color: rgb(47, 221, 134);
+
+}
+
+    #logo h1 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 70px;
+        color: purple;
+    }
+
+    #logo h2 {
+        margin-top: 20px;
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+   #logo img {
+      
+       border: 5px solid rgb(0, 128, 28);
+       border-radius: 50%;
+       height: 400px;
+   }  
+
+   #logo ul {
+      line-height: 50px;
+      width: 100%;
+      list-style: none;
+      padding: 0px;
+      font-size: 30px;
+      
+    }
+  
+    .links {
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links a {
+        padding: 0 10px 0 2px;
+        color: white;
+        text-decoration: none;
+
+    }
+
+    .links a:hover {
+        color: var(--color-red);
+        transition: 500ms;
+      }
+
+   .links a img {
+       height: 15px;
+       width: 15px;
+   }
+
+   div.social {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   }
+
+   div.social img {
+    height: 15px;
+    width: 15px;
+}

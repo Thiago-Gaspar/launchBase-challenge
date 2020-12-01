@@ -1,0 +1,31 @@
+:root {
+ --color-red: rgba(230, 5, 5, 0.623);
+}
+body {
+    background: #630cb4;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+
+header { 
+   padding: 30px;
+  }
+
+.links {
+    text-align: center;
+  }
+
+.links a {
+
+    margin: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+
+    
+  }
+
+.links a:hover {
+  color: var(--color-red);
+  transition: 500ms;
+}

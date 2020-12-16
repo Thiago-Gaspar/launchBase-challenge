@@ -1,17 +1,10 @@
-<!DOCTYPE html> 
+{% extends "layout.njk" %}
 
-<html>
-  <head>
-    <title>Conteúdos</title>
-
-
+{% block content %}
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="icon" href="https://raw.githubusercontent.com/rocketseat-education/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
-
-    <link rel="stylesheet" href="/css/conteudos.css">
+    
+    <link rel="stylesheet" href="courses.css">
   
     
 
@@ -89,6 +82,4 @@
             
             <script src="/scripts.js"></script>
            
-  </body>
-
-  </html>
+  {% endblock %}

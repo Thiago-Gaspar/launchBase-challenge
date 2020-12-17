@@ -16,43 +16,20 @@
     </header>
    
     <section class="cards">
-        
-            <div class="card" id="mapas-com-react-usando-leaflet/">
+            {% for item in items %}
+            <div class="card" id="{{item.id}}">
                 <div class="card_image-container">
-            <img src="https://blog.rocketseat.com.br/content/images/2020/11/blog-thumb-utilizando-mapas-no-react-com-leaflet-1.jpg" alt="Blog"> 
+            <img src="{{item.image}}" alt="Imagem de {{item.name}}"> 
 
             <div class="card_name">
-                <p>Mapas com React usando Leaflet</p>
-                <p>Por: Thiago Marinho</p>
-                <p>11 Mins</p>
+                <p>{{item.name}}</p>
+                <p>{{item.author}}</p>
+                <p>{{item.time}}</p>
              </div>
           </div>
         </div>
-            
-            <div class="card" id="como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal/">
-                <div class="card_image-container">
-                <img src="https://blog.rocketseat.com.br/content/images/2020/11/thumb-como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal.jpg" alt="Blog">
-                
-
-                <div class="card_name">
-                    <p>Como renomear vários arquivos de uma vez usando o terminal</p>
-                    <p>Por: Thiago Marinho</p>
-                    <p>2 Mins</p>
-                </div>
-               </div>
-            </div>
-           
-            <div class="card" id="nextjs-novidades-na-versao-10-e-atualizacao-do-blog-para-melhorar-a-performance/">
-                <div class="card_image-container">
-                 <img src="https://blog.rocketseat.com.br/content/images/2020/11/capa_visao-geral-sobre-next-js-na-versao-10-e-atualizacao-do-blog-para-melhorar-a-performance.jpg" alt="Blog">  
-
-                <div class="card_name">
-                    <p>Next.JS - Novidades na versão 10 e atualização do blog para melhorar a performance</p>
-                    <p>Por: Thiago Marinho</p>
-                    <p>4 Mins</p>
-                </div>
-                </div>
-            </div>
+            {% endfor %}
+          
         
             
     </section>

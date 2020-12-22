@@ -1,4 +1,5 @@
 module.exports = [
+ 
     { id: 'mapas-com-react-usando-leaflet/', 
       image: 'https://blog.rocketseat.com.br/content/images/2020/11/blog-thumb-utilizando-mapas-no-react-com-leaflet-1.jpg',
       name: 'Mapas com React usando Leaflet', 

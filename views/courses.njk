@@ -5,18 +5,20 @@
       rel="stylesheet">
     
     <link rel="stylesheet" href="courses.css">
+     
   
     
 
   </head>
   
   <body>
+     
     <header>
         Conteúdos
     </header>
-   
+     
     <section class="cards">
-            {% for item in items %}
+                    {% for item in items %}
             <div class="card" id="{{item.id}}">
                 <div class="card_image-container">
             <img src="{{item.image}}" alt="Imagem de {{item.name}}"> 
@@ -28,35 +30,13 @@
              </div>
           </div>
         </div>
-            {% endfor %}
+         {% endfor %}
           
         
-            
+           
     </section>
 
-            <div class="modal-overlay">
-                <div class="modal">
-                    <a class="maximize">
-                        <span class="material-icons">
-                            maximize
-                            </span>
-                    </a>
-                    <a class="close-modal">
-                        <span class="material-icons">
-                            close
-                        </span>
-                    </a>
-                    <div class="modal-content">
-                        <iframe src="" frameborder="0"></iframe>
-                    </div>
-                </div>
-            </div>
-
-
-            
-        
-
-            
+             
             <script src="/scripts.js"></script>
            
   {% endblock %}

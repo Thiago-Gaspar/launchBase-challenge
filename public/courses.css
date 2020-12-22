@@ -27,6 +27,7 @@
      .card {
        margin: 0 auto;
        background-color: #df15c48c;
+       cursor: pointer;
     }
    
     .card_image-container img {

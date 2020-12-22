@@ -4,6 +4,7 @@ const nunjucks = require('nunjucks')
 const server = express()
 const courses = require('./data')
 
+
 server.use(express.static('public'))
 
 server.set("view engine", "njk")
@@ -18,8 +19,8 @@ server.get("/", (req, res) => {
     return res.render("index")
 })
 
-server.get("/courses", (req, res) => {
-    return res.render("courses", {items: courses})
+server.get("layout", (req, res) => {
+    return res.render("layout")
 })
 
 server.get("/about", (req, res) => {
@@ -40,10 +41,37 @@ server.get("/about", (req, res) => {
     return res.render("about", {about})
 })
 
-server.use((req, res) => {
-    res.status(404).render("not-found");
+server.get("/courses", (req, res) => {
+    
+return res.render("courses", {items: courses})
+       
 })
+
+server.get("/courses/:id", function(req, res) {
+    const id = req.params.id
+    const course = courses.find(function(course) {
+        
+        return course.id = id
+     
+    })
+
+    if (!course) {
+        return res.send("Blog not found")
+    }
+
+          res.render("course", {item: course});
+ 
+});
+
+
+
 
 server.listen(5000, function () {
     console.log('server is running')
+})
+
+// ERROR 404 // 
+
+server.use((req, res) => {
+    res.status(404).render("not-found");
 })
